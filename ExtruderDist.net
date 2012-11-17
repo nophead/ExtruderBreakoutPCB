@@ -1,0 +1,90 @@
+# EESchema Netlist Version 1.1 created  30/10/2012 19:02:44
+(
+ ( /50901AE8 $noname  P4 CONN_2 {Lib=CONN_2}
+  (    1 /GND )
+  (    2 /PROBE )
+ )
+ ( /509019EA $noname  P2 CONN_4 {Lib=CONN_4}
+  (    1 /THERMISTOR )
+  (    2 /GND )
+  (    3 /+12V )
+  (    4 /HEATER )
+ )
+ ( /5090032E $noname  P1 CONN_3 {Lib=CONN_3}
+  (    1 /FAN )
+  (    2 /+12V )
+  (    3 /TACHO_(NOT_USED) )
+ )
+ ( /5090030D $noname  P3 CONN_4 {Lib=CONN_4}
+  (    1 /MOTOR_RED )
+  (    2 /MOTOR_BLUE )
+  (    3 /MOTOR_GREEN )
+  (    4 /MOTOR_BLACK )
+ )
+ ( /501FA9D4 $noname  J1 DB15 {Lib=DB15}
+  (    1 /THERMISTOR )
+  (    2 /PROBE )
+  (    3 /+12V )
+  (    4 /HEATER )
+  (    5 /HEATER )
+  (    6 /MOTOR_RED )
+  (    7 /MOTOR_GREEN )
+  (    8 /TACHO_(NOT_USED) )
+  (    9 /GND )
+  (   10 /+12V )
+  (   11 /+12V )
+  (   12 /HEATER )
+  (   13 /FAN )
+  (   14 /MOTOR_BLUE )
+  (   15 /MOTOR_BLACK )
+ )
+)
+*
+{ Allowed footprints by component:
+$component J1
+ DB15*
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "/MOTOR_BLACK" "MOTOR_BLACK"
+ J1 15
+ P3 4
+Net 2 "/MOTOR_BLUE" "MOTOR_BLUE"
+ J1 14
+ P3 2
+Net 3 "/TACHO (NOT USED)" "TACHO (NOT USED)"
+ P1 3
+ J1 8
+Net 4 "/THERMISTOR" "THERMISTOR"
+ J1 1
+ P2 1
+Net 5 "/MOTOR_RED" "MOTOR_RED"
+ P3 1
+ J1 6
+Net 6 "/FAN" "FAN"
+ P1 1
+ J1 13
+Net 7 "/+12V" "+12V"
+ P2 3
+ P1 2
+ J1 3
+ J1 10
+ J1 11
+Net 8 "/MOTOR_GREEN" "MOTOR_GREEN"
+ P3 3
+ J1 7
+Net 9 "/PROBE" "PROBE"
+ J1 2
+ P4 2
+Net 10 "/GND" "GND"
+ P4 1
+ J1 9
+ P2 2
+Net 11 "/HEATER" "HEATER"
+ J1 12
+ J1 4
+ J1 5
+ P2 4
+}
+#End
